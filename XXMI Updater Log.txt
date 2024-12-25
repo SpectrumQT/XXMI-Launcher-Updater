@@ -1,0 +1,113 @@
+2024-12-25 16:58:08,713,713 root DEBUG App Start
+2024-12-25 16:58:09,402,402 core.package_manager DEBUG Loaded package: Launcher
+2024-12-25 16:58:09,670,670 core.event_manager DEBUG FIRED: ApplicationEvents.Ready()
+2024-12-25 16:58:09,670,670 core.event_manager DEBUG FIRED: GUIEvents.InstallerFrame.StageUpdate(stage=<Stage.Ready: 1>)
+2024-12-25 16:58:13,536,536 core.event_manager DEBUG FIRED: ApplicationEvents.Close(delay=0)
+2024-12-25 16:58:13,536,536 core.event_manager DEBUG FIRED: ApplicationEvents.Ready()
+2024-12-25 16:58:13,536,536 core.event_manager DEBUG FIRED: GUIEvents.InstallerFrame.StageUpdate(stage=<Stage.Ready: 1>)
+2024-12-25 16:58:13,547,547 gui.classes.windows DEBUG GUI stopped
+2024-12-25 16:58:13,587,587 root DEBUG Joining threads...
+2024-12-25 16:58:13,587,587 root DEBUG Joining watchdog thread...
+2024-12-25 16:58:13,689,689 root DEBUG App Exit
+2024-12-25 17:03:49,080,80 root DEBUG App Start
+2024-12-25 17:03:49,740,740 core.package_manager DEBUG Loaded package: Launcher
+2024-12-25 17:03:49,829,829 root ERROR [Errno 2] No such file or directory: 'C:\\Projects\\XXMI\\XXMI-Updater\\Resources\\Themes\\Default\\MainWindow\\InstallerFrame\\TopBarFrame\\background-image.png'
+Traceback (most recent call last):
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\app.py", line 40, in <module>
+    Application(gui)
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\core\application.py", line 181, in __init__
+    self.gui.initialize()
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\main_window.py", line 76, in initialize
+    self.installer_frame = self.put(InstallerFrame(self))
+                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\installer_frame.py", line 31, in __init__
+    self.put(TopBarFrame(self, self.canvas))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\top_bar.py", line 20, in __init__
+    self.set_background_image(image_path='background-image.png', width=854,
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\containers.py", line 37, in set_background_image
+    self.background_image = UIImage(master=self, image_path=image_path, x=x, y=y, anchor=anchor,
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\widgets.py", line 141, in __init__
+    self.configure(image_path=image_path, x=x, y=y, width=width, height=height, anchor=anchor, opacity=opacity,
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\widgets.py", line 146, in configure
+    self._original_image = Image.open(str(Config.get_resource_path(self) / self.image_path))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Spectrum\AppData\Roaming\Python\Python311\site-packages\PIL\Image.py", line 3236, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Projects\\XXMI\\XXMI-Updater\\Resources\\Themes\\Default\\MainWindow\\InstallerFrame\\TopBarFrame\\background-image.png'
+2024-12-25 17:04:15,629,629 root DEBUG App Start
+2024-12-25 17:04:16,218,218 core.package_manager DEBUG Loaded package: Launcher
+2024-12-25 17:04:16,318,318 root ERROR [Errno 2] No such file or directory: 'C:\\Projects\\XXMI\\XXMI-Updater\\Resources\\Themes\\Default\\MainWindow\\InstallerFrame\\TopBarFrame\\button-system-background.png'
+Traceback (most recent call last):
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\app.py", line 40, in <module>
+    Application(gui)
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\core\application.py", line 181, in __init__
+    self.gui.initialize()
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\main_window.py", line 76, in initialize
+    self.installer_frame = self.put(InstallerFrame(self))
+                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\installer_frame.py", line 31, in __init__
+    self.put(TopBarFrame(self, self.canvas))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\top_bar.py", line 38, in __init__
+    self.put(MinimizeButton(self))
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\top_bar.py", line 248, in __init__
+    super().__init__(
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\top_bar.py", line 222, in __init__
+    super().__init__(**kwargs)
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\widgets.py", line 272, in __init__
+    self._bg_image = self.put(UIImage(master=master, image_path=bg_image_path, width=bg_width, height=bg_height,
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\widgets.py", line 141, in __init__
+    self.configure(image_path=image_path, x=x, y=y, width=width, height=height, anchor=anchor, opacity=opacity,
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\widgets.py", line 146, in configure
+    self._original_image = Image.open(str(Config.get_resource_path(self) / self.image_path))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Spectrum\AppData\Roaming\Python\Python311\site-packages\PIL\Image.py", line 3236, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Projects\\XXMI\\XXMI-Updater\\Resources\\Themes\\Default\\MainWindow\\InstallerFrame\\TopBarFrame\\button-system-background.png'
+2024-12-25 17:04:34,246,246 root DEBUG App Start
+2024-12-25 17:04:34,823,823 core.package_manager DEBUG Loaded package: Launcher
+2024-12-25 17:04:34,963,963 root ERROR [Errno 2] No such file or directory: 'C:\\Projects\\XXMI\\XXMI-Updater\\Resources\\Themes\\Default\\MainWindow\\InstallerFrame\\button-start-background.png'
+Traceback (most recent call last):
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\app.py", line 40, in <module>
+    Application(gui)
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\core\application.py", line 181, in __init__
+    self.gui.initialize()
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\main_window.py", line 76, in initialize
+    self.installer_frame = self.put(InstallerFrame(self))
+                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\installer_frame.py", line 38, in __init__
+    self.put(InstallButton(self))
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\installer_frame.py", line 75, in __init__
+    super().__init__(
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\windows\main\installer_frame\installer_frame.py", line 70, in __init__
+    super().__init__(**defaults)
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\widgets.py", line 272, in __init__
+    self._bg_image = self.put(UIImage(master=master, image_path=bg_image_path, width=bg_width, height=bg_height,
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\widgets.py", line 141, in __init__
+    self.configure(image_path=image_path, x=x, y=y, width=width, height=height, anchor=anchor, opacity=opacity,
+  File "C:\Projects\XXMI\XXMI-Updater\src\xxmi_updater\gui\classes\widgets.py", line 146, in configure
+    self._original_image = Image.open(str(Config.get_resource_path(self) / self.image_path))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Spectrum\AppData\Roaming\Python\Python311\site-packages\PIL\Image.py", line 3236, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Projects\\XXMI\\XXMI-Updater\\Resources\\Themes\\Default\\MainWindow\\InstallerFrame\\button-start-background.png'
+2024-12-25 17:05:21,385,385 root DEBUG App Start
+2024-12-25 17:05:21,947,947 core.package_manager DEBUG Loaded package: Launcher
+2024-12-25 17:05:22,182,182 core.event_manager DEBUG FIRED: ApplicationEvents.Ready()
+2024-12-25 17:05:22,183,183 core.event_manager DEBUG FIRED: GUIEvents.InstallerFrame.StageUpdate(stage=<Stage.Ready: 1>)
+2024-12-25 17:05:23,853,853 core.event_manager DEBUG FIRED: ApplicationEvents.Close(delay=0)
+2024-12-25 17:05:23,853,853 core.event_manager DEBUG FIRED: ApplicationEvents.Ready()
+2024-12-25 17:05:23,853,853 core.event_manager DEBUG FIRED: GUIEvents.InstallerFrame.StageUpdate(stage=<Stage.Ready: 1>)
+2024-12-25 17:05:23,864,864 gui.classes.windows DEBUG GUI stopped
+2024-12-25 17:05:23,906,906 root DEBUG Joining threads...
+2024-12-25 17:05:23,906,906 root DEBUG Joining watchdog thread...
+2024-12-25 17:05:24,007,7 root DEBUG App Exit

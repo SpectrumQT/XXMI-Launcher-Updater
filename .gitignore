@@ -1,0 +1,8 @@
+/!MEDIA/
+/!BUILD/
+/!RELEASES/
+/!TRASH/
+/Assets/
+.idea/
+__pycache__/
+/XXMI-Updater-Log.txt
